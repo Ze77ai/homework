@@ -1,0 +1,28 @@
+.block__header {
+  background: #433d3d;
+  color: white;
+}
+
+.text {
+  color: #f176f9;
+}
+
+.block {
+  background: #f74344;
+  width: 100px;
+  height: 100px;
+}
+
+.block__main {
+  background: #c59ef9;
+  width: 300px;
+}
+
+.element {
+  background: #7343b5;
+  color: white;
+}
+
+p {
+  margin: 0;
+}
