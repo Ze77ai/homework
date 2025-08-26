@@ -1,0 +1,29 @@
+header {
+  background: #e5ad50;
+  height: 60px;
+}
+
+div {
+  background: #f6e8ce;
+}
+
+h3 {
+  color: #fff;
+}
+
+a {
+  color: white;
+}
+
+.section-text {
+  color: black;
+}
+
+.footer {
+  background: #7b2cdd;
+  height: 300px;
+}
+
+.li-link {
+  color: white;
+}
