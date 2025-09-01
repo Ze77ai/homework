@@ -1,0 +1,43 @@
+body {
+  padding-top: 50px;
+  font-size: 60px;
+  color: #fff;
+  background: #333;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  position: relative;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: -130px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  border: solid 5px #fff;
+  border-radius: 100%;
+  background: #fa6366;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  right: -130px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  border: solid 5px #fff;
+  border-radius: 100%;
+  background: #5e5eee;
+}
