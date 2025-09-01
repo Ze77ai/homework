@@ -1,0 +1,29 @@
+body {
+  background: rgb(34, 34, 34);
+}
+
+p {
+  color: #fff;
+}
+
+.white {
+  position: fixed;
+  right: 50px;
+  left: 50%;
+  bottom: 100px;
+  height: 100px;
+  width: 900px;
+  background: #fff;
+  border-radius: 30px;
+}
+
+.circle {
+  position: fixed;
+  right: 50px;
+  left: 55%;
+  bottom: 150px;
+  width: 100px;
+  height: 100px;
+  background: #ff0000;
+  border-radius: 100%;
+}
