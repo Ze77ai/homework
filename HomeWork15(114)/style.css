@@ -19,6 +19,7 @@
   display: block;
   justify-self: center;
   margin-top: 30vh;
+  margin-right: 30vh;
   width: 600px;
   height: 150px;
   cursor: pointer;
@@ -72,4 +73,5 @@
   background: none;
   border: none;
   cursor: pointer;
+
 }
