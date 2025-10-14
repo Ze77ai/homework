@@ -1,0 +1,179 @@
+.header {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 57px;
+}
+
+.header__logo {
+  padding: 5px 0;
+  z-index: 4;
+}
+
+.nav__list {
+  display: flex;
+  gap: 33px;
+}
+
+.nav__link {
+  transition: var(--transition);
+}
+
+.nav__link:hover {
+  color: #575757;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: var(--transition);
+}
+
+.dropdown:hover .dropbtn {
+  color: #575757;
+}
+
+.dropbtn {
+  color: #000;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 4px 8px 0px #00000023;
+  background: #fff;
+  z-index: 3;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: #f3f3f3;
+  display: block;
+}
+
+.dropdown svg {
+  transition: .6s;
+}
+
+.dropdown:hover svg {
+  transform: rotate(180deg);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header__icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 5px 0;
+}
+
+.search__bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  background-color: #fff;
+  border-radius: 50px;
+  transition: 0.5s ease-in-out;
+}
+
+.search__bar input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: transparent;
+  color: #000;
+}
+
+.search__bar img {
+  padding: 5px 0;
+  cursor: pointer;
+  font-size: 25px;
+  color: #000;
+}
+
+.search__bar:hover {
+  width: 250px;
+}
+
+.basket__shop img {
+  padding: 5px 0;
+}
+
+/* ========================================================================== */
+/*                            Burger-menu                                     */
+/* ========================================================================== */
+
+.burger-icon {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  z-index: 4;
+  order: 1;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+  display: block;
+  width: 30px;
+  height: 3px;
+  border-radius: 100px;
+  background: #000;
+  transition: var(--transition);
+}
+
+.burger-icon span {
+  position: relative;
+}
+
+.burger-icon span::after,
+.burger-icon span::before {
+  content: '';
+  position: absolute;
+}
+
+.burger-icon span::after {
+  bottom: -8px;
+}
+
+.burger-icon span::before {
+  top: -8px;
+}
+
+.body--opened-menu .burger-icon span {
+  background: transparent;
+}
+
+.body--opened-menu .burger-icon span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.body--opened-menu .burger-icon span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
